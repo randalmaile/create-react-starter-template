@@ -1,66 +1,29 @@
 {
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
   "extends": [
-    "airbnb/hooks",
-    "plugin:react/recommended", 
-    "plugin:jest/recommended",
-    "prettier",
-    "prettier/react",
-    "plugin:prettier/recommended",
-    "plugin:jsx-a11y/recommended"
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:prettier/recommended"
   ],
-  "parser": "babel-eslint",
   "parserOptions": {
     "ecmaFeatures": {
       "jsx": true
     },
-    "sourceType": "module",
-    "ecmaVersion": 2020
+    "ecmaVersion": 12,
+    "sourceType": "module"
   },
-  "plugins": [
-    "react",
-    "react-hooks",
-    "jest"
-  ],
-  "env": {
-    "browser": true,
-    "es6": true,
-    "node": true,
-    "jest": true
-  },
-  "settings": {
-    "react": {
-      "version": "detect"
-    }
-  },
-  "globals": {
-    "Atomics": "readonly",
-    "SharedArrayBuffer": "readonly"
-  },
+  "plugins": ["react"],
   "rules": {
-    "prettier/prettier": [
-      "error", 
-      {
-        "endOfLine": "auto"
-      }
-    ],
-    "no-unused-expressions": "off",
-    "react/no-children-prop": "off",
     "react/jsx-props-no-spreading": "off",
-    "react/jsx-one-expression-per-line": "off",
-    "react-hooks/rules-of-hooks": "error",
-    "react-hooks/exhaustive-deps": "warn",
-    "react/require-default-props": [ 1,
-      {"ignoreFunctionalComponents": true}
-    ],
+    "react/require-default-props": [1, { "ignoreFunctionalComponents": true }],
     "react/jsx-filename-extension": [
       1,
       {
-        "extensions": [
-          ".js",
-          ".jsx"
-        ]
+        "extensions": [".js", ".jsx"]
       }
-    ],
-    "linebreak-style": ["error", "unix"]
+    ]
   }
 }
