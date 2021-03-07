@@ -79,18 +79,18 @@ STEPS TO FOLLOW:
 2. Run npx eslint --init (go through the prompts and accept all the defaults - choose .js for config file) - remove the .js extension and the "module.exports ="
 3. eslint plugins:
    a. eslint-plugin-react: https://github.com/yannickcr/eslint-plugin-react#configuration
-4. Install Prettier: https://prettier.io/docs/en/install.html
-   a. npm install --save-dev --save-exact prettier
-   b. prettier --write . to format the entire project
-5. Install Prettier - Code formatter (VS Code extenstions)
-    a. 1. CMD + Shift + P -> Format Document
-        OR
-        1. Select the text you want to Prettify
-        2. CMD + Shift + P -> Format Selection
+4. Install eslint-plugin-prettier (https://github.com/prettier/eslint-plugin-prettier)
 5. Install eslint-config-prettier (https://github.com/prettier/eslint-config-prettier#installation):  
    If you use ESLint, install eslint-config-prettier to make ESLint and Prettier play nice with each other. It turns off all ESLint rules that are unnecessary or might conflict with Prettier.
    a. Follow the config rules here: https://github.com/prettier/eslint-plugin-prettier#recommended-configuration
-6. Install lint-staged and husky: https://github.com/okonet/lint-staged && https://github.com/typicode/husky
+6. Install Prettier: https://prettier.io/docs/en/install.html
+   a. npm install --save-dev --save-exact prettier
+   b. prettier --write . to format the entire project
+7. Install Prettier - Code formatter (VS Code extenstions)
+   a. 1. CMD + Shift + P -> Format Document
+   OR 1. Select the text you want to Prettify 2. CMD + Shift + P -> Format Selection
+
+8. Install lint-staged and husky: https://github.com/okonet/lint-staged && https://github.com/typicode/husky
    Note: If you use ESLint, make sure lint-staged runs it before Prettier, not after.
 
-7. IMPORTANT: Note: While it is possible to pass options to Prettier via your ESLint configuration file, it is not recommended because editor extensions such as PRETTIER-VSCODE will read .prettierrc, but won't read settings from ESLint, which can lead to an inconsistent experience.
+9. IMPORTANT: Note: While it is possible to pass options to Prettier via your ESLint configuration file, it is not recommended because editor extensions such as PRETTIER-VSCODE will read .prettierrc, but won't read settings from ESLint, which can lead to an inconsistent experience.

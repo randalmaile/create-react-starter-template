@@ -7,8 +7,3 @@ lib
 build
 .DS_Store
 package-lock.json
-
-# Ignore all HTML files:
-*.html
-*.jsx
-*.js
