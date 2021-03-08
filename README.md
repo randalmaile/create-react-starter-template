@@ -108,6 +108,13 @@ npm install @craco/craco
   Next, create a craco.config.js at the root of our project and add the tailwindcss and autoprefixer as PostCSS plugins:
 
   npx tailwindcss init
+
+### Installing Twin CRA styled components (https://github.com/ben-rogerson/twin.examples/tree/master/cra-styled-components): Twin blends the magic of Tailwind with the flexibility of css-in-js
+npm install twin.macro --save-dev
+
+
+
+
 ### Setting up linting / formatting:
 
 TAMING THE NIGHTMARE - STEPS TO FOLLOW:

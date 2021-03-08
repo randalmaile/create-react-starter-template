@@ -3,10 +3,12 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import { BrowserRouter } from 'react-router-dom';
 import App from './App';
+import GlobalStyles from './components/GlobalStyles';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <BrowserRouter>
+    <GlobalStyles />
     <App />
   </BrowserRouter>,
   document.getElementById('root'),
