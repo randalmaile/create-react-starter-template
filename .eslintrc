@@ -36,6 +36,7 @@
     "jest/no-identical-title": "error",
     "jest/prefer-to-have-length": "warn",
     "jest/valid-expect": "error",
+    "import/prefer-default-export": "off",
     "react/jsx-props-no-spreading": "off",
     "react/require-default-props": [1, { "ignoreFunctionalComponents": true }],
     "react/jsx-filename-extension": [
