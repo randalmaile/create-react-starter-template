@@ -111,9 +111,20 @@ npm install @craco/craco
 
 ### Installing Twin CRA styled components (https://github.com/ben-rogerson/twin.examples/tree/master/cra-styled-components): Twin blends the magic of Tailwind with the flexibility of css-in-js
 npm install twin.macro --save-dev
-
-
-
+// babel-plugin-macros.config.js
+  module.exports = {
+    twin: {
+      preset: 'styled-components',
+      styled: {
+        import: 'default',
+        from: 'styled-components',
+      },
+      css: {
+        import: 'css',
+        from: 'styled-components',
+      },
+    },
+  }
 
 ### Setting up linting / formatting:
 
