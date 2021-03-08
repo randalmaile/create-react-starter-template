@@ -88,6 +88,26 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 npm install --save styled-components
 
+### Installing Tailwind as the base for the site
+https://tailwindcss.com/docs/guides/create-react-app
+npm install -D tailwindcss@npm:@tailwindcss/postcss7-compat @tailwindcss/postcss7-compat postcss@^7 autoprefixer@^9
+npm install @craco/craco
+  {
+    // ...
+    "scripts": {
+     "start": "react-scripts start",<delete>
+     "build": "react-scripts build",<delete>
+     "test": "react-scripts test",<delete>
+     "start": "craco start",<add>
+     "build": "craco build",<add>
+     "test": "craco test",<add>
+      "eject": "react-scripts eject"
+    },
+  }
+
+  Next, create a craco.config.js at the root of our project and add the tailwindcss and autoprefixer as PostCSS plugins:
+
+  npx tailwindcss init
 ### Setting up linting / formatting:
 
 TAMING THE NIGHTMARE - STEPS TO FOLLOW:
