@@ -61,6 +61,10 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/m
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
+### Debugging in VS-code
+https://code.visualstudio.com/docs/nodejs/reactjs-tutorial#_debugging-react
+Run view (⇧⌘D) and click create a launch.json file to customize Run and Debug.
+
 ### Deployment
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
